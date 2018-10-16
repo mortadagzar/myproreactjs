@@ -4,11 +4,13 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 
-
+function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+  }
 
 
 ReactDOM.render(
-<h1>ruhf4i4fj</h1>,
+<h1>{Welcome(props)}</h1>,
 document.getElementById('root')
 );
 
